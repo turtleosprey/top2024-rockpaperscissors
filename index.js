@@ -3,6 +3,9 @@ console.log(`Shout Out to The Odin Project!`);
 console.log(`Shout Out to \`me\` for showing up!`);
 console.groupEnd;
 
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice(decision){
   var number = Math.random();
   
