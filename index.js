@@ -6,9 +6,6 @@ console.groupEnd();
 let humanScore = 0;
 let computerScore = 0;
 
-const humanDecision = getHumanChoice();
-const computerDecision = getComputerChoice();
-
 function getComputerChoice(computerChoice){
   var number = Math.random();
   
@@ -56,4 +53,15 @@ function playRound(humanChoice, computerChoice){
   
 };
 
-playRound(humanDecision, computerDecision);
+function playGame(){
+  for (i = 0; i <= 5; i++){
+    const humanDecision = getHumanChoice();
+    const computerDecision = getComputerChoice();
+
+    console.log(`Round: ${i}`);
+
+    playRound(humanDecision, computerDecision);
+  }
+}
+
+playGame();
