@@ -14,7 +14,10 @@ function getComputerChoice(decision){
 
   return decision
 };
+getComputerChoice();
 
 function getHumanChoice(decision){
-
+  decision = window.prompt(`Choose: Rock, Paper, Scissors`).toLocaleLowerCase();
+  return decision;
 };
+getHumanChoice();
