@@ -6,21 +6,25 @@ console.groupEnd;
 let humanScore = 0;
 let computerScore = 0;
 
-function getComputerChoice(decision){
+function getComputerChoice(computerChoice){
   var number = Math.random();
   
   number <= .33 
-  ? decision = `rock` 
+  ? computerChoice = `rock` 
   : number <= .66
-  ? decision = `paper`
-  : decision = `scissors`
+  ? computerChoice = `paper`
+  : computerChoice = `scissors`
 
-  return decision
+  return computerChoice
 };
 getComputerChoice();
 
-function getHumanChoice(decision){
-  decision = window.prompt(`Choose: Rock, Paper, Scissors`).toLocaleLowerCase();
-  return decision;
+function getHumanChoice(humanChoice){
+  humanChoice = window.prompt(`Choose: Rock, Paper, Scissors`).toLocaleLowerCase();
+  return humanChoice;
 };
 getHumanChoice();
+
+function playRound(humanChoice, computerChoice){
+
+};
