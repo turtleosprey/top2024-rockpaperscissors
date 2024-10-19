@@ -41,9 +41,9 @@ function playRound(humanChoice, computerChoice){
   humanChoice === `scissor` && computerChoice === `scissors` || humanChoice === computerChoice
   ? console.log(`${computerChoice} is the same as ${humanChoice}. It's a tie!`)
   : humanChoice === `rock` && computerChoice === `paper` 
-    || humanChoice === `scissors` && computerChoice === `paper`
-      || humanChoice === `scissor` && computerChoice === `rock` 
-    || humanChoice === `paper` && computerChoice === `scissors` 
+    || humanChoice === `paper` && computerChoice === `scissors`
+    || humanChoice === `scissors` && computerChoice === `rock`
+      || humanChoice ===`scissor` && computerChoice === `rock`
   ? loseMessage(humanChoice, computerChoice)
 
   : humanChoice === `paper` && computerChoice === `rock` 
