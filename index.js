@@ -55,12 +55,12 @@ function playRound(humanChoice, computerChoice){
 
 function playGame(){
   for (i = 0; i <= 5; i++){
-    const humanDecision = getHumanChoice();
-    const computerDecision = getComputerChoice();
+    const HUMANdDECISION = getHumanChoice();
+    const COMPUTERDECISION = getComputerChoice();
 
     console.log(`Round: ${i}`);
 
-    playRound(humanDecision, computerDecision);
+    playRound(HUMANdDECISION, COMPUTERDECISION);
   }
 }
 
