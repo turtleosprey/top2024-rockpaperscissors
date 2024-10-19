@@ -38,7 +38,7 @@ function playRound(humanChoice, computerChoice){
     console.log(`Computer Score: ${computerScore}`);
   };
 
-  humanChoice === computerChoice
+  humanChoice || humanChoice === `scissor`=== computerChoice
   ? console.log(`${computerChoice} is the same as ${humanChoice}. It's a tie!`)
   : humanChoice === `rock` && computerChoice === `paper` 
     || humanChoice === `scissors` || `scissor` && computerChoice === `rock` 
