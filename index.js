@@ -54,7 +54,7 @@ function playRound(humanChoice, computerChoice){
 };
 
 function playGame(){
-  for (i = 0; i <= 5; i++){
+  for (i = 1; i <= 5; i++){
     const HUMANdDECISION = getHumanChoice();
     const COMPUTERDECISION = getComputerChoice();
 
