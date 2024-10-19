@@ -38,19 +38,20 @@ function playRound(humanChoice, computerChoice){
     console.log(`Computer Score: ${computerScore}`);
   };
 
-  humanChoice || humanChoice === `scissor`=== computerChoice
+  humanChoice === `scissor` && computerChoice === `scissors` || humanChoice === computerChoice
   ? console.log(`${computerChoice} is the same as ${humanChoice}. It's a tie!`)
   : humanChoice === `rock` && computerChoice === `paper` 
-    || humanChoice === `scissors` || `scissor` && computerChoice === `rock` 
-    || humanChoice === `paper` && computerChoice === `scissors` || `scissor`
+    || humanChoice === `scissors` && computerChoice === `paper`
+      || humanChoice === `scissor` && computerChoice === `rock` 
+    || humanChoice === `paper` && computerChoice === `scissors` 
   ? loseMessage(humanChoice, computerChoice)
 
   : humanChoice === `paper` && computerChoice === `rock` 
-    || humanChoice === `rock` && computerChoice === `scissors` || `scissor`
-    || humanChoice === `scissors` || `scissor` && computerChoice === `paper`
+    || humanChoice === `rock` && computerChoice === `scissors` 
+    || humanChoice === `scissors` && computerChoice === `paper` 
+      || humanChoice ===`scissor` && computerChoice === `paper`
   ? winMessage(humanChoice, computerChoice)
-  : console.log(`Possibilities ran out`)
-  
+  : console.log(`Error`)  
 };
 
 function playGame(){
