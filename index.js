@@ -41,13 +41,13 @@ function playRound(humanChoice, computerChoice){
   humanChoice === computerChoice
   ? console.log(`${computerChoice} is the same as ${humanChoice}. It's a tie!`)
   : humanChoice === `rock` && computerChoice === `paper` 
-    || humanChoice === `scissors` && computerChoice === `rock` 
-    || humanChoice === `paper` && computerChoice === `scissors`
+    || humanChoice === `scissors` || `scissor` && computerChoice === `rock` 
+    || humanChoice === `paper` && computerChoice === `scissors` || `scissor`
   ? loseMessage(humanChoice, computerChoice)
 
   : humanChoice === `paper` && computerChoice === `rock` 
-    || humanChoice === `rock` && computerChoice === `scissors` 
-    || humanChoice === `scissors` && computerChoice === `paper`
+    || humanChoice === `rock` && computerChoice === `scissors` || `scissor`
+    || humanChoice === `scissors` || `scissor` && computerChoice === `paper`
   ? winMessage(humanChoice, computerChoice)
   : console.log(`Possibilities ran out`)
   
